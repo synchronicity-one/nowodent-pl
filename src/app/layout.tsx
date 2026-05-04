@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
-import { Montserrat, Jost } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const montserrat = Montserrat({
-  subsets: ["latin", "latin-ext"],
-  weight: ["600"],
+const montserrat = localFont({
+  src: [
+    { path: "./fonts/montserrat-v31-latin_latin-ext-600.woff2", weight: "600", style: "normal" },
+  ],
   variable: "--font-montserrat",
   display: "swap",
 });
 
-const jost = Jost({
-  subsets: ["latin", "latin-ext"],
-  weight: ["500", "700"],
+const jost = localFont({
+  src: [
+    { path: "./fonts/jost-v20-latin_latin-ext-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/jost-v20-latin_latin-ext-700.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-jost",
   display: "swap",
 });
