@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nowodent.pl/sitemap.xml
