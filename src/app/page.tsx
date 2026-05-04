@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center gap-[30px] pb-[10vh] md:pb-0 bg-white">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center gap-[30px] pb-[12vh] md:pb-0 bg-white">
       <Image
         src="/logo.webp"
         alt="NowoDent stomatologia Kraśnik"
