@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center gap-[30px] pb-[12vh] md:pb-0 bg-white">
+    <main className="min-h-screen flex flex-col items-center justify-center text-center gap-[30px] pb-[12vh] md:pb-0 bg-white">
       <Image
         src="/logo.webp"
         alt="NowoDent stomatologia Kraśnik"
@@ -14,7 +14,7 @@ export default function Home() {
 
       <a
         href="tel:515038555"
-        className="-mt-[30px] mb-[30px] font-semibold text-[26px] tracking-[3px] no-underline text-[#ad9576] hover:text-[#2D2D33] transition-colors"
+        className="-mt-[30px] mb-[30px] font-semibold text-[26px] tracking-[3px] no-underline text-[#8a7558] hover:text-[#2D2D33] transition-colors"
         style={{ fontFamily: "var(--font-montserrat)" }}
       >
         tel.: 515-038-555
@@ -38,6 +38,6 @@ export default function Home() {
           zapraszamy
         </div>
       </div>
-    </section>
+    </main>
   );
 }
