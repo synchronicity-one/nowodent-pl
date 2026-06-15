@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# surowe zrodla obrazow - nie wrzucamy do repo
+_src-images/
+*.bak.*

@@ -1,1 +1,115 @@
 @import "tailwindcss";
+
+@theme {
+  --color-gold: #ad9575;
+  --color-gold-dark: #806c51;
+  --color-green-marble: #23331F;
+  --color-cream: #F7F7F3;
+  --color-green-wash: #f1f2ec;
+  --color-btn: #2d4226;
+  --color-btn-hover: #23331F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Marble panel - real marble photo, cover */
+.marble-panel {
+  background-image: url("/marble-strip.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CSS-only lightbox - overlay hidden by default, shown on :target */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(35, 51, 31, 0.92);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.lightbox:target {
+  opacity: 1;
+  visibility: visible;
+}
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+.lightbox__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-decoration: none;
+}
+.lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+  text-decoration: none;
+  user-select: none;
+}
+.lightbox__nav:hover,
+.lightbox__close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.lightbox__nav--prev { left: 1.5rem; }
+.lightbox__nav--next { right: 1.5rem; }
+
+/* Back-to-top - CSS scroll-driven, pojawia sie po przewinieciu */
+.back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+@supports (animation-timeline: scroll()) {
+  .back-to-top {
+    animation: btt-reveal linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 300px 600px;
+  }
+}
+/* Fallback: starsze przegladarki - zawsze widoczny */
+@supports not (animation-timeline: scroll()) {
+  .back-to-top {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes btt-reveal {
+  0% { opacity: 0; visibility: hidden; }
+  1% { visibility: visible; }
+  100% { opacity: 1; visibility: visible; }
+}

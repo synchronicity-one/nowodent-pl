@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 const montserrat = localFont({
   src: [
@@ -42,7 +45,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl-PL" className={`${montserrat.variable} ${jost.variable}`}>
-      <body>{children}</body>
+      <body>
+        <span id="top" />
+        <Header />
+        {children}
+        <Footer />
+        <BackToTop />
+      </body>
     </html>
   );
 }
