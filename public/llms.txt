@@ -1,5 +1,22 @@
 # NowoDent
 
-Stomatologia w Kraśniku. Lubelska 56A, 23-200 Kraśnik. Tel: 515-038-555.
+NowoDent to nowoczesny gabinet stomatologiczny w Kraśniku, prowadzony przez lek. dent. Magdalenę Nowomiejską.
 
-Strona w trybie "wkrótce otwarcie".
+## Lokalizacja i kontakt
+- Adres: ul. Lubelska 56A, 23-200 Kraśnik
+- Telefon: 515 038 555
+- Godziny otwarcia: poniedziałek-piątek 8:00-17:00, sobota 9:00-14:00, niedziela nieczynne
+
+## Zakres usług
+
+### Stomatologia dziecięca
+Gaz rozweselający (sedacja wziewna), leczenie próchnicy zębów mlecznych i stałych, usuwanie zębów mlecznych, profilaktyka próchnicy (lakierowanie, lakowanie, lapisowanie), wizyty adaptacyjne.
+
+### Stomatologia zachowawcza
+Leczenie próchnicy, wypełnienia kompozytowe, skaling, piaskowanie (usunięcie kamienia nazębnego), wybielanie.
+
+### Endodoncja
+Leczenie kanałowe.
+
+### Medycyna estetyczna
+Toksyna botulinowa, usuwanie zmarszczek, kwas hialuronowy, stymulatory tkankowe, osocze bogatopłytkowe (wampirzy lifting), fibryna bogatopłytkowa, mezoterapia skóry głowy, terapia łysienia.
