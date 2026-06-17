@@ -63,10 +63,7 @@ export default function Footer() {
           style={{ fontFamily: "var(--font-jost)" }}
         >
           <p>© 2026 NowoDent. Wszelkie prawa zastrzeżone.</p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-green-marble transition-colors">Polityka prywatności</a>
-            <a href="#" className="hover:text-green-marble transition-colors">RODO</a>
-          </div>
+          <p>Informacja RODO / Cookies: nie wykorzystujemy plików cookies.</p>
         </div>
       </div>
     </footer>
