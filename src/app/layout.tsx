@@ -24,11 +24,11 @@ const jost = localFont({
 
 export const metadata: Metadata = {
   title: "NowoDent — stomatologia Kraśnik",
-  description: "NowoDent — stomatologia Kraśnik. Lubelska 56A, 23-200 Kraśnik. Tel: 515-038-555. Wkrótce otwarcie.",
+  description: "NowoDent — nowoczesna stomatologia w Kraśniku. Stomatologia dziecięca i zachowawcza, endodoncja, medycyna estetyczna. ul. Lubelska 56A, tel. 515 038 555.",
   alternates: { canonical: "https://nowodent.pl" },
   openGraph: {
     title: "NowoDent — stomatologia Kraśnik",
-    description: "NowoDent — stomatologia Kraśnik. Lubelska 56A, 23-200 Kraśnik. Tel: 515-038-555.",
+    description: "NowoDent — nowoczesna stomatologia w Kraśniku. Stomatologia dziecięca i zachowawcza, endodoncja, medycyna estetyczna. ul. Lubelska 56A, tel. 515 038 555.",
     url: "https://nowodent.pl",
     siteName: "NowoDent",
     locale: "pl_PL",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "NowoDent — stomatologia Kraśnik",
-    description: "NowoDent — stomatologia Kraśnik. Lubelska 56A, 23-200 Kraśnik. Tel: 515-038-555.",
+    description: "NowoDent — nowoczesna stomatologia w Kraśniku. Stomatologia dziecięca i zachowawcza, endodoncja, medycyna estetyczna. ul. Lubelska 56A, tel. 515 038 555.",
   },
 };
 
