@@ -37,7 +37,7 @@ export default function Kontakt() {
                 width={640}
                 height={800}
                 loading="lazy"
-                className="h-full w-full rounded-xl object-cover shadow-lg"
+                className="h-56 w-full rounded-xl object-cover shadow-lg md:h-full"
               />
             </picture>
           </div>
@@ -72,6 +72,29 @@ export default function Kontakt() {
                 <span>sobota 9:00 – 14:00</span>
                 <span>niedziela nieczynne</span>
               </div>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <h3 className="text-sm uppercase tracking-[2px] text-green-marble font-bold">Facebook</h3>
+              <a
+                href="https://www.facebook.com/Nowodent"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center gap-3 text-base md:text-lg text-gold-dark hover:text-green-marble transition-colors"
+              >
+                <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-gold/20 bg-white">
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                    className="h-6 w-6"
+                    fill="#1877F2"
+                  >
+                    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.313 0 2.686.235 2.686.235v2.953H16.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+                  </svg>
+                </span>
+                NowoDent na Facebooku
+              </a>
             </div>
           </div>
         </div>
